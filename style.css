@@ -18,6 +18,8 @@ html {
 }
 
 body {
+    display: flex;
+    align-items: center;
     min-height: 100vh;
     margin: 0;
     padding: 0 1.5rem;
@@ -26,22 +28,93 @@ body {
 }
 
 .card {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
     background: #fff;
-    background-image: url(images/bg-pattern-mobile.svg);
+    background-image: url(images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
-    background-position: center 0%;
-    background-size: 15rem;
+    background-position: 1260% 65%;
     border-radius: 1.5rem;
-    max-width: 57.5rem;
+    width: 57.5rem;
+    max-width: 57.5em;
+    height: 32rem;
     margin: 8.125rem auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+}
+
+.card-image {
+    position: relative;
+    background: url(images/illustration-woman-online-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -5.25em center;
 }
 
 .card-image img {
-    /* transform: translateY(-60%); */
+    position: absolute;
+    top: 40%;
+    left: -20%;
+}
+
+.card-text {
+    margin-top: 4.5em;
+}
+
+.card-text h1 {
+    margin: 0;
+    margin-bottom: 2.75rem;
+}
+
+.card-text h2 {
+    margin: 0;
+}
+
+.accordian-item button {
+    font: 400 11px 'Kumbh Sans';
+    padding: 0;
+    background: none;
+    border: none; 
+}
+
+.accordian-content {
+    display: none;
+}
+
+@media (max-width: 62.5em) {
+    .card {
+        grid-template-columns: 1fr;
+        gap: 0;
+        max-width: 20.5rem;
+        margin: auto; 
+        padding: 0;
+        background-image: url(images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 75%;
+    }
+
+    .card-image {
+        background-image: url(images/illustration-woman-online-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        /* padding-top: 12.5rem;
+        margin-top: -12.5rem */
+    }
+
+    .card-image img {
+        display:none
+    }
+
+    .card-text {
+        margin: 0 1.5rem;
+    }
+
+    .card-text h1 {
+        text-align: center;
+    }
+}
+
+
+/* .card-image img {
+    transform: translateY(-60%);
     width: 100%;
     height: auto;
     max-width: 15rem;
@@ -50,10 +123,6 @@ body {
 .card-text {
     margin: 0 1.5rem;
 }
-
-/* .accordian-content {
-    display: none;
-} */
 
 @media (min-width: 62.5em) {
     .card {
@@ -83,12 +152,9 @@ body {
         overflow: hidden;
     }
 
-    .card-image img {
-        transform: translateX(-5.25em);
-        max-width: 29.5rem;
-    }
+    
 
     .card-text {
         padding-top: 2.5rem;
     }
-}
+} */
