@@ -60,18 +60,24 @@ body {
 
 .card-text h1 {
     margin: 0;
-    margin-bottom: 2.75rem;
+    margin-bottom: 1.1rem;
+    font-size: 2rem;
+    color: var(--text-blue);
 }
 
-.card-text h2 {
+.card-text h3 {
     margin: 0;
 }
 
 .accordian-item button {
-    font: 400 11px 'Kumbh Sans';
-    padding: 0;
+    width: 350px;
+    text-align: start;
+    font-family: 'Kumbh Sans';
+    color: var(--text-dark-grey-blue);
     background: none;
+    padding: 1.4rem 0;
     border: none; 
+    border-bottom: 1px solid var(--divider-blue);
 }
 
 .accordian-content {
@@ -109,6 +115,11 @@ body {
 
     .card-text h1 {
         text-align: center;
+    }
+
+
+    .accordian-item button {
+        width: 100%;
     }
 }
 
