@@ -65,11 +65,10 @@ body {
     color: var(--text-blue);
 }
 
-.card-text h3 {
-    margin: 0;
-}
-
 .accordian-item button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 350px;
     text-align: start;
     font-family: 'Kumbh Sans';
@@ -78,6 +77,11 @@ body {
     padding: 1.4rem 0;
     border: none; 
     border-bottom: 1px solid var(--divider-blue);
+    cursor: pointer;
+}
+
+.accordian-item button:focus {
+    outline:0;
 }
 
 .accordian-content {
