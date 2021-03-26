@@ -2,18 +2,6 @@
 
 This is my solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). It's my first time working on a project with Javascript! :tada: Any feedback is appreciated. :relaxed:
 
-<!-- ## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-  - [Built with](#built-with)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-## Overview -->
-
 ### The challenge
 
 Users should be able to:
@@ -45,5 +33,5 @@ Users should be able to:
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I used CoderCoder's live coding [video on Youtube](https://www.youtube.com/watch?v=FboXxLxg8eo) and Ana Luz Cervantes's [solution](https://www.frontendmentor.io/solutions/faq-accordion-card-PCZJIKBwk) as references. Thanks for sharing :relaxed:!
 
