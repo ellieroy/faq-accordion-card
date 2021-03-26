@@ -37,7 +37,7 @@ body {
     border-radius: 1.5rem;
     width: 57.5rem;
     max-width: 57.5em;
-    height: 32rem;
+    min-height: 32rem;
     margin: 8.125rem auto;
 }
 
@@ -65,6 +65,12 @@ body {
     color: var(--text-blue);
 }
 
+.accordian-item {
+    width: 350px;
+    padding: 1.4rem 0;
+    border-bottom: 1px solid var(--divider-blue);
+}
+
 .accordian-item button {
     display: flex;
     justify-content: space-between;
@@ -74,39 +80,55 @@ body {
     font-family: 'Kumbh Sans';
     color: var(--text-dark-grey-blue);
     background: none;
-    padding: 1.4rem 0;
     border: none; 
-    border-bottom: 1px solid var(--divider-blue);
+    padding: 0;
     cursor: pointer;
+}
+
+.accordian-item button::after {
+    content: '';
+    display: block;
+    width: 0.625rem;
+    height: 0.4375rem;
+    background-image: url(images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
 }
 
 .accordian-item button:focus {
     outline:0;
 }
 
+.accordian-item button.open {
+    font-weight: 700;
+}
+
 .accordian-content {
-    display: none;
+    font-size: 0.75rem;
+    color: var(--text-grey-blue);
+    line-height: 1.2rem;
+    padding: 1rem 0 0;
+    /* display: none; */
 }
 
 @media (max-width: 62.5em) {
     .card {
         grid-template-columns: 1fr;
-        gap: 0;
+        gap: 0; 
         max-width: 20.5rem;
         margin: auto; 
         padding: 0;
-        background-image: url(images/bg-pattern-mobile.svg);
+        /* background-image: url(images/bg-pattern-mobile.svg);
         background-repeat: no-repeat;
-        background-position: top center;
-        background-size: 75%;
+        background-position: top center; */
     }
 
     .card-image {
-        background-image: url(images/illustration-woman-online-mobile.svg);
+        /* display: none; */
+        background-image: url(images/bg-pattern-mobile.svg);
         background-repeat: no-repeat;
         background-position: top center;
-        /* padding-top: 12.5rem;
-        margin-top: -12.5rem */
     }
 
     .card-image img {
@@ -121,6 +143,9 @@ body {
         text-align: center;
     }
 
+    .accordian-item {
+        width: 100%; 
+    }
 
     .accordian-item button {
         width: 100%;
