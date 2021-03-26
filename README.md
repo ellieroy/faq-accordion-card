@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [...](https://your-solution-url.com)
 - Live Site URL: [https://ellieroy.github.io/faq-accordian-card/](https://ellieroy.github.io/faq-accordian-card/)
 
 ### Built with
@@ -33,5 +33,5 @@ Users should be able to:
 
 ## Acknowledgments
 
-I used CoderCoder's live coding [video on Youtube](https://www.youtube.com/watch?v=FboXxLxg8eo) and Ana Luz Cervantes's [solution](https://www.frontendmentor.io/solutions/faq-accordion-card-PCZJIKBwk) as references. Thanks for sharing :relaxed:!
+I used Coder Coder's live coding [video on Youtube](https://www.youtube.com/watch?v=FboXxLxg8eo) and Ana Luz Cervantes's [solution](https://www.frontendmentor.io/solutions/faq-accordion-card-PCZJIKBwk) as references for my own solution. Thanks for sharing!
 
