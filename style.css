@@ -191,8 +191,4 @@ body {
     .accordian-item button {
         width: 100%;
     }
-
-    .accordian-content {
-        font-size: 1rem;
-    }
 }
