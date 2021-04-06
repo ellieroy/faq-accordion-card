@@ -1,10 +1,10 @@
-document.querySelectorAll('.accordian-question').forEach(item => {
+document.querySelectorAll('.accordion-question').forEach(item => {
     item.addEventListener('click', event => {
         let accCollapse = item.nextElementSibling;
 
-        // Open accordian item
+        // Open accordion item
         if(!item.classList.contains('open')){
-            // Get height of .accordian-collapse 
+            // Get height of .accordion-collapse 
             accCollapse.style.display = 'block'; 
             let accHeight = accCollapse.clientHeight;
 
@@ -14,19 +14,19 @@ document.querySelectorAll('.accordian-question').forEach(item => {
                 accCollapse.style.display = '';
             }, 1);
 
-            // Remove "collapse", add "collapsing" class to .accordian-collapse (sibling)            
-            accCollapse.classList = 'accordian-collapse collapsing';
+            // Remove "collapse", add "collapsing" class to .accordion-collapse (sibling)            
+            accCollapse.classList = 'accordion-collapse collapsing';
             
             // After 300ms, remove "collapsing" class and add "collapse open" class
             setTimeout(() => {
-                accCollapse.classList = 'accordian-collapse collapse open';
+                accCollapse.classList = 'accordion-collapse collapse open';
             }, 300);
         }
 
-        // Close accordian item 
+        // Close accordion item 
         else {
-            // Remove "collapse open", add "collapsing" class to .accordian-collapse (sibling)
-            accCollapse.classList = 'accordian-collapse collapsing';
+            // Remove "collapse open", add "collapsing" class to .accordion-collapse (sibling)
+            accCollapse.classList = 'accordion-collapse collapsing';
 
             setTimeout(() => {
                 accCollapse.style.height = '0px';
@@ -34,7 +34,7 @@ document.querySelectorAll('.accordian-question').forEach(item => {
 
             // After 300ms, remove "collapsing" class and add "collapse" class
             setTimeout(() => {
-                accCollapse.classList = 'accordian-collapse collapse';
+                accCollapse.classList = 'accordion-collapse collapse';
                 accCollapse.style.height = '';
             }, 300);
         }
