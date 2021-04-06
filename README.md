@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [...](https://your-solution-url.com)
-- Live Site URL: [https://ellieroy.github.io/faq-accordian-card/](https://ellieroy.github.io/faq-accordian-card/)
+- Solution URL: [https://www.frontendmentor.io/solutions/faq-accordion-card-mKPUGhsYV](https://www.frontendmentor.io/solutions/faq-accordion-card-mKPUGhsYV)
+- Live Site URL: [https://ellieroy.github.io/faq-accordion-card/](https://ellieroy.github.io/faq-accordion-card/)
 
 ### Built with
 
