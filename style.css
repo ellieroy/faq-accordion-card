@@ -139,9 +139,13 @@ body {
 }
 
 @media (max-width: 62.5em) {
+    body {
+        padding: 7.5rem 1.5rem 1.5rem 1.5rem; 
+    }
+
     .card {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 4fr;
+        grid-template-rows: 1fr 3fr;
         gap: 0; 
         max-width: 20.5rem;
         margin: auto; 
@@ -151,7 +155,7 @@ body {
 
     .card-image {
         background-image: url(images/bg-pattern-mobile.svg);
-        background-position: 60% top;
+        background-position: center top;
         background-size: 70%;
     }
 
@@ -164,7 +168,7 @@ body {
         background-image: url(images/illustration-woman-online-mobile.svg);
         background-repeat: no-repeat;
         background-size: 75%;
-        background-position: center;
+        background-position: 35%;
         top: -95%;
     }
 
@@ -172,20 +176,8 @@ body {
         display:none
     }
 
-    /* .card-image .mobile-img {
-        position: absolute;
-        display: block;
-        max-width: 100%;
-        left: 50px;
-        top: -110px;
-        background-image: url(images/bg-pattern-mobile.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 100% 110%;
-    } */
-    
     .card-text {
-        margin: 2rem 1.5rem 0;
+        margin: 0 1.5rem;
     }
 
     .card-text h1 {
